@@ -153,8 +153,19 @@
 <body>
 
  <svg id="ig-arrow" viewBox="0 0 120 140">
-   
- <polygon points="80,35 100,15 120,35" fill="black"/>
+
+   <svg width="120" height="120">
+  <!-- Definiere Pfeilspitze -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" 
+            refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="black" />
+    </marker>
+  </defs>
+
+  <!-- Diagonale Linie mit Pfeilspitze -->
+  <line x1="20" y1="100" x2="100" y2="20" stroke="black" stroke-width="2" marker-end="url(#arrowhead)" />
+</svg>
 
   <!-- text -->
   <text x="25" y="110">Open in browser</text>
