@@ -155,7 +155,6 @@
  <svg id="ig-arrow" viewBox="0 0 120 140">
 
 <svg width="120" height="120">
-  <!-- Pfeilspitze definieren -->
   <defs>
     <marker id="arrowhead" markerWidth="10" markerHeight="7" 
             refX="0" refY="3.5" orient="auto">
@@ -163,8 +162,9 @@
     </marker>
   </defs>
 
-  <!-- Steilere Linie -->
-  <line x1="40" y1="100" x2="70" y2="30" stroke="black" stroke-width="2" marker-end="url(#arrowhead)" />
+  <!-- Pfeil mit Rotation um den Startpunkt -->
+  <line x1="60" y1="60" x2="60" y2="20" stroke="black" stroke-width="2" marker-end="url(#arrowhead)" 
+        transform="rotate(-82 60 60)" />
 </svg>
 
   <!-- text -->
